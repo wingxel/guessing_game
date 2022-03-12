@@ -21,7 +21,7 @@ def main() -> None:
 			u_g = get_input(f"{'guess is too low' if u_g < r_n else 'guess to high'}! try again (0-9): ")
 		a_l += attempts
 		print(f"{u_g} is correct.\nNumber of attempted guesses : {attempts}")
-	print(f"\n\tResults\nNumber of rounds : 5\nAverage number of guesses : {a_l / 5} per raund")
+	print(f"\n\tResults\nNumber of rounds : 5\nAverage number of guesses : {int(a_l / 5)} per raund")
 
 if __name__ == "__main__":
 	main()
